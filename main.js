@@ -17,3 +17,41 @@ numbers.forEach((number) => {
     temp = input.value;
   });
 });
+
+operators.forEach((operator) => {
+    operator.addEventListener("click", (e) => {
+      switch (e.target.textContent) {
+        case "+":
+          if (input.value) {
+            input.value = temp + "+";
+          }
+          break;
+        case "-":
+          if (input.value) {
+            input.value = temp + "-";
+          }
+          break;
+        case "*":
+          if (input.value) {
+            input.value = temp + "*";
+          }
+          break;
+        case "÷":
+          if (input.value) {
+            input.value = temp + "/";
+          }
+          break;
+        case "=":
+          calcResult(input.value);
+          temp = "";
+          setTimeout(()=>input.value="",7000)
+          break;
+      }
+    });
+  });
+  
+  const calcResult = function (res) {
+    input.value = "";
+    input.value = eval(res);
+  };
+  
