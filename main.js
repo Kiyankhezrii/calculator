@@ -4,4 +4,3 @@ const numbers = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator");
 const clearBtn = document.querySelector(".clear");
 
-clearBtn.addEventListener("click", () => (input.value = ""));
