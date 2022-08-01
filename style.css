@@ -35,9 +35,9 @@ body {
 }
 .numbers {
   font-size: 2.2rem;
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  text-align: center;
 }
 .btn {
   width: 10rem;
